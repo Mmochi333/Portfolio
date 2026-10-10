@@ -1,5 +1,5 @@
 /* =========================
-        Reset & Variables
+         Variables
 ========================= */
 * {
     box-sizing: border-box;
@@ -22,7 +22,6 @@
     /* สีพื้นหลัง */
     --header-bg-color: rgba(255, 255, 255, 0.85);
     --light-bg-color: white;
-    --page-bg-color: rgb(240, 247, 246);
 
     /* สีเงา */
     --header-shadow: 0 4px 10px rgb(190, 190, 190);
@@ -87,11 +86,6 @@ a:hover {
     font-size: clamp(1.5rem, 4vw, 2.25rem);
 }
 
-.header-subtitle {
-    color: var(--mute-text-color);
-    font-size: 0.95rem;
-}
-
 /* =========================
             Navbar
 ========================= */
@@ -120,7 +114,6 @@ nav a:hover {
     color: var(--nav-text-color);
 }
 
-/* เมนูของหน้าปัจจุบัน */
 nav a.active {
     background-color: var(--secondary-color);
     color: var(--light-text-color);
@@ -544,9 +537,7 @@ footer {
     .contact-grid {
         grid-template-columns: 1fr;
     }
-}
 
-@media (max-width: 768px) {
     .hero {
         grid-template-columns: 1fr;
         text-align: center;
@@ -558,6 +549,10 @@ footer {
 
     .btn-group {
         justify-content: center;
+    }
+
+    .info-grid {
+        grid-template-columns: repeat(2, 1fr);
     }
 
     nav {
